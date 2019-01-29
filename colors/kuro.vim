@@ -13,7 +13,8 @@ function! s:h(group, style)
 endfunction
 
 " Colors
-let s:white  = "255"
+let s:white1  = "255"
+let s:white2  = "251"
 let s:grey1  = "245"
 let s:grey2  = "242"
 let s:grey3  = "238"
@@ -26,7 +27,7 @@ let s:pink   = "219"
 let s:blue   = "68"
 
 " Styles
-let s:white_text                  = {"ctermbg": s:black,  "ctermfg": s:white}
+let s:white1_text                  = {"ctermbg": s:black,  "ctermfg": s:white1}
 let s:grey1_text                  = {"ctermbg": s:black,  "ctermfg": s:grey1}
 let s:grey2_text                  = {"ctermbg": s:black,  "ctermfg": s:grey2}
 let s:red_text                    = {"ctermbg": s:black,  "ctermfg": s:red}
@@ -38,33 +39,33 @@ let s:underline                   = {"ctermbg": "NONE",   "ctermfg": "NONE", "ct
 let s:blue_highlight              = {"ctermbg": s:blue}
 let s:grey3_highlight             = {"ctermbg": s:grey3}
 let s:grey4_highlight             = {"ctermbg": s:grey4}
-let s:black_text_white_highlight  = {"ctermbg": s:white,  "ctermfg": s:black}
+let s:black_text_white2_highlight  = {"ctermbg": s:white2,  "ctermfg": s:black}
 let s:black_text_yellow_highlight = {"ctermbg": s:yellow, "ctermfg": s:black}
 let s:black_text_pink_highlight   = {"ctermbg": s:pink,   "ctermfg": s:black}
-let s:grey4_text_white_highlight  = {"ctermbg": s:white,  "ctermfg": s:grey4}
+let s:grey4_text_white2_highlight  = {"ctermbg": s:white2,  "ctermfg": s:grey4}
 let s:green_text_grey3_highlight  = {"ctermbg": s:grey3,  "ctermfg": s:green}
 
 " Apply style
-call s:h("Normal",       s:white_text)
-call s:h("Constant",     s:white_text)
-call s:h("String",       s:white_text)
-call s:h("Character",    s:white_text)
-call s:h("Identifier",   s:white_text)
-call s:h("Statement",    s:white_text)
-call s:h("PreProc",      s:white_text)
-call s:h("Type",         s:white_text)
-call s:h("Special",      s:white_text)
-call s:h("Ignore",       s:white_text)
-call s:h("Directory",    s:white_text)
-call s:h("Folded",       s:white_text)
-call s:h("TabLineSel",   s:white_text)
-call s:h("Title",        s:white_text)
-call s:h("TabLine",      s:white_text)
-call s:h("TabLineFill",  s:white_text)
-call s:h("ErrorMsg",     s:white_text)
-call s:h("SignColumn",   s:white_text)
-call s:h("WarningMsg",   s:white_text)
-call s:h("FoldColumn",   s:white_text)
+call s:h("Normal",       s:white1_text)
+call s:h("Constant",     s:white1_text)
+call s:h("String",       s:white1_text)
+call s:h("Character",    s:white1_text)
+call s:h("Identifier",   s:white1_text)
+call s:h("Statement",    s:white1_text)
+call s:h("PreProc",      s:white1_text)
+call s:h("Type",         s:white1_text)
+call s:h("Special",      s:white1_text)
+call s:h("Ignore",       s:white1_text)
+call s:h("Directory",    s:white1_text)
+call s:h("Folded",       s:white1_text)
+call s:h("TabLineSel",   s:white1_text)
+call s:h("Title",        s:white1_text)
+call s:h("TabLine",      s:white1_text)
+call s:h("TabLineFill",  s:white1_text)
+call s:h("ErrorMsg",     s:white1_text)
+call s:h("SignColumn",   s:white1_text)
+call s:h("WarningMsg",   s:white1_text)
+call s:h("FoldColumn",   s:white1_text)
 call s:h("Error",        s:red_text)
 call s:h("DiffDelete",   s:red_text)
 call s:h("Todo",         s:yellow_text)
@@ -84,11 +85,11 @@ call s:h("SpecialKey",   s:grey2_text)
 call s:h("Visual",       s:grey3_highlight)
 call s:h("ColorColumn",  s:grey4_highlight)
 call s:h("CursorLine",   s:grey4_highlight)
-call s:h("StatusLineNC", s:grey4_text_white_highlight)
-call s:h("Pmenu",        s:black_text_white_highlight)
-call s:h("PmenuSbar",    s:black_text_white_highlight)
-call s:h("PmenuThumb",   s:black_text_white_highlight)
-call s:h("StatusLine",   s:black_text_white_highlight)
+call s:h("StatusLineNC", s:grey4_text_white2_highlight)
+call s:h("Pmenu",        s:black_text_white2_highlight)
+call s:h("PmenuSbar",    s:black_text_white2_highlight)
+call s:h("PmenuThumb",   s:black_text_white2_highlight)
+call s:h("StatusLine",   s:black_text_white2_highlight)
 call s:h("IncSearch",    s:black_text_yellow_highlight)
 call s:h("Search",       s:black_text_yellow_highlight)
 call s:h("PmenuSel",     s:black_text_pink_highlight)
