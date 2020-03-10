@@ -24,7 +24,7 @@ let s:red    = "160"
 let s:green  = "028"
 let s:yellow = "184"
 let s:pink   = "219"
-let s:blue   = "67"
+let s:blue   = "25"
 
 " Styles
 let s:white1_text                  = {"ctermbg": s:black,  "ctermfg": s:white1}
