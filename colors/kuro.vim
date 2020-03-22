@@ -36,7 +36,7 @@ let s:green_text                  = {"ctermbg": s:black,  "ctermfg": s:green}
 let s:invisible_text              = {"ctermbg": s:black,  "ctermfg": s:black}
 let s:none                        = {"ctermbg": "NONE",   "ctermfg": "NONE", "cterm": "NONE"}
 let s:underline                   = {"ctermbg": "NONE",   "ctermfg": "NONE", "cterm": "underline"}
-let s:blue_highlight              = {"ctermbg": s:blue}
+let s:blue_underline              = {"ctermbg": s:blue, "cterm": "underline"}
 let s:grey3_highlight             = {"ctermbg": s:grey3}
 let s:grey4_highlight             = {"ctermbg": s:grey4}
 let s:black_text_white2_highlight  = {"ctermbg": s:white2,  "ctermfg": s:black}
@@ -76,7 +76,7 @@ call s:h("Underlined",   s:underline)
 call s:h("DiffAdd",      s:green_text)
 call s:h("DiffChange",   s:green_text)
 call s:h("DiffText",     s:green_text_grey3_highlight)
-call s:h("MatchParen",   s:blue_highlight)
+call s:h("MatchParen",   s:underline)
 call s:h("Comment",      s:grey1_text)
 call s:h("LineNr",       s:grey2_text)
 call s:h("CursorLineNr", s:grey2_text)
