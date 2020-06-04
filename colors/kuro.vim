@@ -22,7 +22,7 @@ let s:grey4  = "234"
 let s:black  = "016"
 let s:red    = "160"
 let s:green  = "028"
-let s:yellow = "184"
+let s:yellow = "142"
 let s:pink   = "219"
 let s:blue   = "25"
 
