@@ -23,8 +23,8 @@ let s:black  = "016"
 let s:red    = "160"
 let s:green  = "028"
 let s:yellow = "142"
-let s:pink   = "219"
-let s:blue   = "25"
+let s:blue1   = "25"
+let s:blue2   = "31"
 
 " Styles
 let s:white1_text                  = {"ctermbg": s:black,  "ctermfg": s:white1}
@@ -36,14 +36,16 @@ let s:green_text                  = {"ctermbg": s:black,  "ctermfg": s:green}
 let s:invisible_text              = {"ctermbg": s:black,  "ctermfg": s:black}
 let s:none                        = {"ctermbg": "NONE",   "ctermfg": "NONE", "cterm": "NONE"}
 let s:underline                   = {"ctermbg": "NONE",   "ctermfg": "NONE", "cterm": "underline"}
-let s:blue_underline              = {"ctermbg": s:blue, "cterm": "underline"}
+let s:blue1_underline              = {"ctermbg": s:blue1, "cterm": "underline"}
 let s:grey3_highlight             = {"ctermbg": s:grey3}
 let s:grey4_highlight             = {"ctermbg": s:grey4}
 let s:black_text_white2_highlight  = {"ctermbg": s:white2,  "ctermfg": s:black}
 let s:black_text_yellow_highlight = {"ctermbg": s:yellow, "ctermfg": s:black}
-let s:black_text_pink_highlight   = {"ctermbg": s:pink,   "ctermfg": s:black}
+let s:black_text_blue2_highlight   = {"ctermbg": s:blue2,   "ctermfg": s:white1}
 let s:grey4_text_white2_highlight  = {"ctermbg": s:white2,  "ctermfg": s:grey4}
 let s:green_text_grey3_highlight  = {"ctermbg": s:grey3,  "ctermfg": s:green}
+let s:white_text_grey3_highlight  = {"ctermbg": s:grey3,  "ctermfg": s:white1}
+let s:white_text_grey4_highlight  = {"ctermbg": s:grey2,  "ctermfg": s:white1}
 
 " Apply style
 call s:h("Normal",       s:white1_text)
@@ -84,7 +86,7 @@ call s:h("VertSplit",    s:grey2_text)
 call s:h("SpecialKey",   s:grey2_text)
 call s:h("Visual",       s:grey3_highlight)
 call s:h("ColorColumn",  s:grey4_highlight)
-call s:h("CursorLine",   s:white1_text)
+call s:h("CursorLine",   s:black_text_blue2_highlight)
 call s:h("StatusLineNC", s:grey4_text_white2_highlight)
 call s:h("Pmenu",        s:grey1_text)
 call s:h("PmenuSbar",    s:grey1_text)
@@ -92,7 +94,7 @@ call s:h("PmenuThumb",   s:grey1_text)
 call s:h("StatusLine",   s:black_text_white2_highlight)
 call s:h("IncSearch",    s:black_text_yellow_highlight)
 call s:h("Search",       s:black_text_yellow_highlight)
-call s:h("PmenuSel",     s:white1_text)
+call s:h("PmenuSel",     s:black_text_blue2_highlight)
 call s:h("NonText",      s:invisible_text)
 call s:h("QuickFixLine", s:none)
 
